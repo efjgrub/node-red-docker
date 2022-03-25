@@ -17,3 +17,8 @@ sudo docker container rm nr
 ```sh
 gcloud.cmd run deploy
 ```
+
+## Describe services limits and config
+```sh
+ gcloud.cmd run services describe nr --format export > service.yaml
+```
