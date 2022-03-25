@@ -88,16 +88,6 @@
         "wires": []
     },
     {
-        "id": "1e88cb8b34d11c9d",
-        "type": "comment",
-        "z": "f6f2187d.f17ca8",
-        "name": "",
-        "info": "",
-        "x": 300,
-        "y": 240,
-        "wires": []
-    },
-    {
         "id": "0a82b6646a217553",
         "type": "http in",
         "z": "bb243b2183a0a341",
