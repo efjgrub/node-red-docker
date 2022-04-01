@@ -5,7 +5,7 @@ This project helps to create and personalize container Node-Red to publish in Go
 
 You can change some personal information like "Title", "Login Logo", "Editor name" and others just editing settings.js on data directory.
 
-Change this on *editorTheme:* section
+Change this on **editorTheme:** section
 
 ```js
         page: {
