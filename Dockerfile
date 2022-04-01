@@ -7,3 +7,4 @@ RUN npm install node-red-dashboard
 # RW
 COPY data/settings.js /data/settings.js
 COPY data/flows.json /data
+COPY images/* /data/

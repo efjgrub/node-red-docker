@@ -334,6 +334,16 @@ module.exports = {
          */
         //tours: false,
 
+        page: {
+            title: "Papers Flow"
+        },
+        header: {
+            title: "Papers Flow",
+            url: "https://papersbr.com.br" // optional url to make the header text/image a link to this url
+        },
+        tours: false, // disable the Welcome Tour for new users
+        userMenu: false, // Hide the user-menu even if adminAuth is enabled
+
         palette: {
             /** The following property can be used to order the categories in the editor
              * palette. If a node's category is not in the list, the category will get
@@ -356,7 +366,9 @@ module.exports = {
                 mode: "manual"
             }
         },
-
+        login: {
+            image: "/data/papers.png" // a 256x256 image
+        },
         codeEditor: {
             /** Select the text editor component used by the editor.
              * Defaults to "ace", but can be set to "ace" or "monaco"
