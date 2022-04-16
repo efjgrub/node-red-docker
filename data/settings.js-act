@@ -335,10 +335,10 @@ module.exports = {
         //tours: false,
 
         page: {
-            title: "Papers Flow"
+            title: "ACT Flow automation"
         },
         header: {
-            title: "Papers Flow",
+            title: "ACT Flow",
             url: "https://papersbr.com.br" // optional url to make the header text/image a link to this url
         },
         tours: false, // disable the Welcome Tour for new users
@@ -367,7 +367,7 @@ module.exports = {
             }
         },
         login: {
-            image: "/data/papers.png" // a 256x256 image
+            image: "/data/act.jpeg" // a 256x256 image
         },
         codeEditor: {
             /** Select the text editor component used by the editor.
