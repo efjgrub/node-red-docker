@@ -1,0 +1,201 @@
+[
+    {
+        "id": "f6f2187d.f17ca8",
+        "type": "tab",
+        "label": "Flow 0",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "bb243b2183a0a341",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9b8e4ec8e463d6f6",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "eaa3f8454723b706",
+        "type": "http in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "url": "/flow1",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 200,
+        "y": 140,
+        "wires": [
+            [
+                "c87bf3f00890102f"
+            ]
+        ]
+    },
+    {
+        "id": "c87bf3f00890102f",
+        "type": "template",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "plain",
+        "template": "<h1> Flow 1 </html>",
+        "output": "str",
+        "x": 380,
+        "y": 140,
+        "wires": [
+            [
+                "a35d9da888b88683",
+                "97a589e61de6ecbe"
+            ]
+        ]
+    },
+    {
+        "id": "a35d9da888b88683",
+        "type": "http response",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 640,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "97a589e61de6ecbe",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "req",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "0a82b6646a217553",
+        "type": "http in",
+        "z": "bb243b2183a0a341",
+        "name": "",
+        "url": "/flow2",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 240,
+        "y": 160,
+        "wires": [
+            [
+                "5489a614b71e7518"
+            ]
+        ]
+    },
+    {
+        "id": "5489a614b71e7518",
+        "type": "template",
+        "z": "bb243b2183a0a341",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "plain",
+        "template": "<h1> Flow 2 </html>",
+        "output": "str",
+        "x": 480,
+        "y": 160,
+        "wires": [
+            [
+                "a2b4bee4301d4db2",
+                "583ad1126da654e3"
+            ]
+        ]
+    },
+    {
+        "id": "a2b4bee4301d4db2",
+        "type": "http response",
+        "z": "bb243b2183a0a341",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 640,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "583ad1126da654e3",
+        "type": "debug",
+        "z": "bb243b2183a0a341",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "c6905d895fad2cfe",
+        "type": "inject",
+        "z": "9b8e4ec8e463d6f6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "flow3",
+        "payloadType": "str",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "cedb1be23eaa4e3c"
+            ]
+        ]
+    },
+    {
+        "id": "cedb1be23eaa4e3c",
+        "type": "debug",
+        "z": "9b8e4ec8e463d6f6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 390,
+        "y": 200,
+        "wires": []
+    }
+]

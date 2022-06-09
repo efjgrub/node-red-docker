@@ -335,11 +335,11 @@ module.exports = {
         //tours: false,
 
         page: {
-            title: "Papers Flow"
+            title: "Fortics Flow"
         },
         header: {
-            title: "Papers Flow",
-            url: "https://papersbr.com.br" // optional url to make the header text/image a link to this url
+            title: "Fortics Flow",
+            url: "https://fortics.com.br" // optional url to make the header text/image a link to this url
         },
         tours: false, // disable the Welcome Tour for new users
         userMenu: false, // Hide the user-menu even if adminAuth is enabled
@@ -367,7 +367,7 @@ module.exports = {
             }
         },
         login: {
-            image: "/data/papers.png" // a 256x256 image
+            image: "/data/fortics.png" // a 256x256 image
         },
         codeEditor: {
             /** Select the text editor component used by the editor.
